@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -421,14 +423,14 @@
   
   
     <li class="md-nav__item">
-      <a href="classes-net-comumente-utilizadas.html" class="md-nav__link">
+      <a href="classes-net-de-uso-comum.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Classes .NET comumente utilizadas
+    5. Classes .NET de uso comum
   
 
     
@@ -448,14 +450,14 @@
   
   
     <li class="md-nav__item">
-      <a href="arquiteturas-de-3-camadas.html" class="md-nav__link">
+      <a href="arquiteturas-de-tres-camadas.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Arquiteturas de 3 camadas
+    6. Arquiteturas de três camadas
   
 
     
@@ -529,14 +531,14 @@
   
   
     <li class="md-nav__item">
-      <a href="acesso-a-base-de-dados.html" class="md-nav__link">
+      <a href="acesso-as-bases-de-dados.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. Acesso à base de dados
+    9. Acesso às bases de dados
   
 
     
@@ -556,14 +558,14 @@
   
   
     <li class="md-nav__item">
-      <a href="threads-de-execucao.html" class="md-nav__link">
+      <a href="os-threads-de-execucao.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. Threads de execução
+    10. Os threads de execução
   
 
     
@@ -644,7 +646,7 @@
   <span class="md-ellipsis">
     
   
-    13. Continua...
+    13. Continua…
   
 
     
@@ -705,48 +707,35 @@
 
 
 <h1 id="1-introducao">1. <span style="color: #365f91">Introdução</span></h1>
-<p>O PDF deste documento está disponível em inglês |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQD147jS2qBQTbGko7Jd78PAAWjscSpdlCyxUlfJVqMlfbk?e=5G2CCi">ICI</a>|.</p>
-<p>Os exemplos deste documento estão disponíveis em |<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDj2R-lBuB7RbjatgFFhtn8AeyiPCn-AcMNUyuUG9A8l-0?e=gA6Ox0">ICI</a>|.</p>
-<p>O C# é uma linguagem recente. Tem estado disponível em sucessivas versões beta desde 2000, antes de ser lançado oficialmente em fevereiro de 2002, em simultâneo com a plataforma .NET 1.0 da Microsoft, à qual está ligado. O C# só pode ser executado neste ambiente de execução. Proporciona aos programas que nele são executados uma vasta gama de classes. Numa primeira aproximação, pode dizer-se que a plataforma .NET é um ambiente de execução análogo a uma máquina virtual Java. No entanto, existem duas diferenças:</p>
+<p>O PDF deste documento está disponível |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQD147jS2qBQTbGko7Jd78PAAWjscSpdlCyxUlfJVqMlfbk?e=D2NTJg">AQUI</a>|.</p>
+<p>Os exemplos deste documento estão disponíveis |<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDj2R-lBuB7RbjatgFFhtn8AeyiPCn-AcMNUyuUG9A8l-0?e=UqbRLX">AQUI</a>|.</p>
+<p>O C# é uma linguagem recente. Esteve disponível em versões beta sucessivas desde o ano 2000, antes de ser oficialmente lançado em fevereiro de 2002, em simultâneo com a plataforma .NET 1.0 da Microsoft, à qual está associado. O C# só pode funcionar com este ambiente de execução. Este disponibiliza aos programas que nele são executados um conjunto muito vasto de classes. Numa primeira aproximação, pode dizer-se que a plataforma .NET é um ambiente de execução análogo a uma máquina virtual Java. No entanto, é possível destacar duas diferenças:</p>
 <ul>
-  <li>O Java tem vindo a ser executado em vários sistemas operativos (Windows, Unix, Macintosh) desde a sua criação. Em 2002, a plataforma .NET só funcionava em máquinas Windows. Nos últimos anos, o projeto Mono [http://www.mono-project.com] tornou possível executar a plataforma .NET em máquinas com sistemas operativos como o Unix e o Linux. A versão atual do Mono (fevereiro de 2008) suporta o .NET 1.1 e elementos do .NET 2.0.
-  </li>
-  <li>A plataforma .NET pode executar programas escritos em diferentes linguagens. Tudo o que é necessário é que o compilador seja capaz de produzir código IL (Intermediate Language), que é então executado pela máquina virtual .NET. Todas as classes .NET estão disponíveis para linguagens .NET compatíveis, o que tende a apagar as diferenças entre linguagens, uma vez que os programas fazem uso extensivo dessas classes. A escolha de uma linguagem .NET torna-se uma questão de gosto, em vez de desempenho.
-  </li>
+<li>O Java executa-se em diferentes OS (Windows, Unix, Macintosh) desde o seu início. Em 2002, a plataforma .NET só se executava em máquinas Windows. Há alguns anos que o projeto Mono [http://www.mono-project.com] permite utilizar a plataforma .NET em sistemas operativos como o Unix e o Linux. A versão atual do Mono (fevereiro de 2008) suporta o .NET 1.1 e elementos do .NET 2.0.</li>
+<li>A plataforma .NET permite a execução de programas escritos em diferentes linguagens. Basta que o compilador desses programas saiba produzir código IL (Intermediate Language), código executado pela máquina virtual .NET. Todas as classes de .NET estão disponíveis para as linguagens compatíveis com .NET, o que tende a atenuar as diferenças entre as linguagens, na medida em que os programas utilizam amplamente essas classes. A escolha de uma linguagem .NET torna-se mais uma questão de preferência do que de desempenho.</li>
 </ul>
-
-<p>Em 2002, o C# utilizava a plataforma .NET 1.0. Na altura, o C# era, em grande parte, uma «cópia» do Java e o .NET uma biblioteca de classes muito semelhante à da plataforma de desenvolvimento Java. Ao aprender a linguagem, era possível passar de um ambiente C# para um ambiente Java sem se sentir deslocado. Havia até ferramentas para converter código- e de uma linguagem para a outra. Desde então, as coisas evoluíram. Cada linguagem e plataforma de desenvolvimento tem agora as suas especificidades. Já não é tão fácil transferir competências de um domínio para outro.</p>
-<p>O C# 3.0 e o framework .NET 3.5 trazem muitas novas funcionalidades. Provavelmente a mais importante é o LINQ (Language INtegrated Query), que permite que sequências de objetos sejam consultadas de forma uniforme, semelhante à linguagem SQL, a partir de estruturas na memória, como matrizes e listas, bases de dados (apenas SQL Server por enquanto – fevereiro de 2008) ou ficheiros XML. </p>
-<p>Este documento não é um curso exaustivo. Por exemplo, o LINQ não é abordado. Destina-se a pessoas que já conhecem programação e querem descobrir os conceitos básicos do C#.  Trata-se de uma revisão do documento original publicado em 2002. </p>
+<p>Em 2002, o C# utilizava a plataforma .NET 1.0. Na altura, o C# era, em grande parte, uma «cópia» do Java e o .NET uma biblioteca de classes muito semelhante à da plataforma de desenvolvimento Java. No âmbito da aprendizagem da linguagem, passava-se de um ambiente C# para um ambiente Java sem se sentir realmente desorientado. Havia até ferramentas de conversão de código-fonte de uma linguagem para a outra. Desde então, as coisas evoluíram. Cada linguagem e cada plataforma de desenvolvimento tem agora as suas especificidades. Já não é tão fácil transferir as competências de um domínio para outro.</p>
+<p>O C# 3.0 e o framework .NET 3.5 trazem muitas novidades. A mais importante é provavelmente a LINQ (Language INtegrated Query), que permite realizar consultas de forma uniforme, semelhante à da linguagem SQL, sequências de objetos provenientes de estruturas em memória, tais como tabelas e listas, de bases de dados (SQL Server, apenas por enquanto — fevereiro de 2008) ou de ficheiros XML. </p>
+<p>Este documento não é um curso exaustivo. Por exemplo, o LINQ não é aqui abordado. Destina-se a pessoas que já têm conhecimentos de programação e que pretendem descobrir os fundamentos do C#. Trata-se de uma revisão do documento original publicado em 2002. </p>
 <p>Vários livros ajudaram-me a escrever este curso:</p>
 <p>Para a versão de 2002:</p>
 <ul>
-  <li>Programação Profissional em C#, Edições Wrox
-  </li>
-  <li>C# e .NET, Gérard Leblanc, Edições Eyrolles
-  </li>
+<li>Professional C# programming, Edições Wrox</li>
+<li>C# e .NET, Gérard Leblanc, Edições Eyrolles</li>
 </ul>
-
-<p>Na altura, achei que ambos os livros eram excelentes. Desde então, Gérard Leblanc publicou versões atualizadas, incluindo as seguintes:</p>
+<p>Na altura, considerei estas duas obras excelentes. Desde então, Gérard Leblanc publicou versões atualizadas, entre as quais a seguinte:</p>
 <ul>
-  <li>C# e .NET 2005, Gérard Leblanc, Edições Eyrolles
-  </li>
+<li>C# e .NET 2005, Gérard Leblanc, Edições Eyrolles</li>
 </ul>
-
 <p>Para a revisão de 2008, utilizei as seguintes fontes:</p>
 <ul>
-  <li>o documento original de 2002. Este documento, uma cópia/colagem do meu curso de Java, continha tanto erros tipográficos como erros mais graves, tais como afirmar que tipos primitivos como <i>System.Int32 </i>eram classes, quando na verdade são estruturas. Mea culpa...
-  </li>
-  <li>documentação do Visual Studio Express 2008 MSDN
-  </li>
-  <li>o livro C# 3.0 in a Nutshell, de Joseph e Ben Albahari, publicado pela O&#x27;Reilly, um dos melhores livros de programação que já li.
-  </li>
+<li>o documento inicial de 2002. Este documento, resultante de um «copiar/colar» do meu curso de Java, continha tanto erros tipográficos como erros mais graves, tais como afirmar que os tipos primitivos, como <em>System.Int32,</em> eram classes, quando na verdade são estruturas. Mea culpa...</li>
+<li>a documentação MSDN do Visual Studio Express 2008</li>
+<li>o livro «C# 3.0 in a Nutshell», de Joseph e Ben Albahari, publicado pela O&#x27;Reilly, um dos melhores livros de programação que já tive a oportunidade de ler.</li>
 </ul>
-
-<p>Os códigos-fonte dos exemplos deste documento estão disponíveis em [http://tahe.developpez.com/dotnet/csharp/].</p>
-<p>Serge Tahé, maio de 2008</p>
-<p>Desde maio de 2008, o C# evoluiu, naturalmente. No entanto, este documento continua a ser relevante para a aprendizagem desta linguagem. Para além deste curso, encontrará uma apresentação do ORM (Object Relational Mapper) <strong>Entity Framework</strong> no artigo <strong>«Introdução ao ORM Entity Framework 5 Code</strong> First» na URL [<a href="https://stahe.github.io/pt-ef5cf-oct-2012/"><u><span style="color: #0563c1">https://stahe.github.io/en-ef5cf-oct-2012/</span></u></a>].</p>
-<p>Serge Tahé, outubro de 2013</p>
+<p><strong>Serge Tahé</strong>, maio de 2008</p>
+<p>Desde maio de 2008, o C# evoluiu, naturalmente. No entanto, este documento continua a ser relevante para a aprendizagem desta linguagem. Como complemento a este curso, encontrará uma apresentação do ORM (Mapeador Objeto-Relacional) <strong>Entity Framework</strong> no artigo <strong>«Introdução ao ORM Entity Framework 5 Code</strong> First» no URL [<a href="https://stahe.github.io/pt-ef5cf-oct-2012/"><u><span style="color: #0000ff">Introdução ao Entity Framework 5 Code First através de exemplos (2012)</span></u></a>].</p>
+<p><strong>Serge Tahé</strong>, outubro de 2013</p>
 
 
 
